@@ -1,9 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 :root {
   --max-width: 1200px;
+  --dark: #0c0c0c;
+  --light: #aaaaaa;
+  --white: #ffff;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  color: var(--light);
+  background-color: var(--dark);
+  padding: 1rem 5rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+nav a {
+  text-decoration: none;
+  color: var(--light);
+}
+
+.header-container {
+  background-color: var(--dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 6rem;
+  color: var(--light);
+  min-height: 70vh;
+}
+
+.header-container img {
+  max-width: 500px;
+  filter: grayscale(70%);
+}
+
+.content {
+  line-height: 2rem;
+}
+
+.content h2 {
+  font-size: 2.5rem;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
+  line-height: 2.5rem;
+}
+
+.content p {
+  font-size: 1rem;
+  font-weight: 100;
+  margin-bottom: 2rem;
+  letter-spacing: 0.09rem;
+}
+
+.btn-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+.btn-container a {
+  text-decoration: none;
+  color: var(--light);
+}
+
+.btn {
+  font-weight: 100;
+  padding: 0.5rem 1rem;
+  border: solid 0.1rem var(--light);
+}
+
+.btn:hover {
+  background-color: var(--light);
+  color: var(--dark);
 }

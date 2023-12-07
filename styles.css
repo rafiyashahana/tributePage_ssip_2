@@ -27,19 +27,24 @@ nav a {
   color: var(--light);
 }
 
-.header-container {
+header {
   background-color: var(--dark);
+}
+
+.header-container {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1rem 6rem;
   color: var(--light);
-  min-height: 70vh;
+  height: 75vh;
+  overflow: hidden;
 }
 
 .header-container img {
   max-width: 500px;
   filter: grayscale(70%);
+  margin-top: 200px;
 }
 
 .content {
@@ -82,4 +87,10 @@ nav a {
 .btn:hover {
   background-color: var(--light);
   color: var(--dark);
+}
+
+.section-container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
 }

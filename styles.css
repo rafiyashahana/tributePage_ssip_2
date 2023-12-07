@@ -14,6 +14,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -84,6 +85,7 @@ header {
   font-weight: 100;
   padding: 0.5rem 1rem;
   border: solid 0.1rem var(--light);
+  transition: 0.3s ease;
 }
 
 .btn:hover {
@@ -111,5 +113,19 @@ header {
   margin-bottom: 1rem;
   font-size: 1rem;
   text-align: justify;
+  color: var(--text-light);
+  letter-spacing: 0.02rem;
+}
+
+table tr td {
+  padding: 1.2rem 0;
+  text-align: left;
+  border-bottom: solid var(--light);
+}
+.main-container table tr td:first-child {
+  color: var(--text-dark);
+}
+
+.main-container table tr td:nth-child(2) {
   color: var(--text-light);
 }

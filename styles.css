@@ -135,7 +135,7 @@ header {
   max-width: 800px;
   text-align: center;
   background-color: #f5f5f5;
-  padding: 0;
+  padding: 0 1rem 0.5rem;
 }
 .championship-container .tab-header {
   display: flex;
@@ -155,26 +155,35 @@ header {
 .championship-container .tab-header span:hover {
   cursor: pointer;
 }
-.championship-content table {
+.championship-content table,
+.non-championship-content table {
   margin: auto;
   border-spacing: 3.5rem 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
-.championship-content table thead tr td {
+.championship-content table thead tr td,
+.non-championship-content table thead tr td {
   text-align: center;
   color: var(--text-dark);
   font-weight: 800;
 }
 
-.championship-content table tbody tr td {
+.championship-content table tbody tr td,
+.non-championship-content table tbody tr td {
   color: var(--text-light);
 }
 
 .championship-content .btn {
   width: 200px;
   margin: auto;
-  padding: 1rem;
+  padding: 0.5rem;
   cursor: pointer;
   font-weight: 300;
   margin-bottom: 2.5rem;
+  color: var(--text-dark);
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.non-championship-content {
+  display: none;
 }

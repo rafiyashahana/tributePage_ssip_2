@@ -152,8 +152,13 @@ header {
   display: flex;
   justify-content: center;
 }
-.championship-container .tab-header .tab {
+#tab1 {
+  border-top-left-radius: 1rem;
+}
+#tab2 {
   border-top-right-radius: 1rem;
+}
+.championship-container .tab-header .tab {
   padding: 1.5rem 2rem;
   width: 100%;
   color: var(--text-dark);

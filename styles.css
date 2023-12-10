@@ -27,9 +27,14 @@ nav {
   justify-content: flex-end;
   gap: 0.5rem;
 }
+
 nav a {
   text-decoration: none;
   color: var(--light);
+}
+nav:hover,
+nav a:hover {
+  color: var(--maroon);
 }
 
 header {
@@ -239,4 +244,26 @@ header {
   border-bottom-right-radius: 1rem;
   line-height: 2rem;
   /* display: none; */
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  color: var(--light);
+  background-color: var(--dark);
+  font-size: 1rem;
+  padding: 2rem;
+  margin: auto;
+  font-weight: 300;
+}
+footer li {
+  list-style: none;
+}
+footer a {
+  text-decoration: none;
+  color: var(--light);
+  font-size: 0.75rem;
+  color: var(--maroon);
 }

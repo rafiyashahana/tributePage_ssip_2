@@ -7,6 +7,8 @@
   --text-light: #838383;
   --text-dark: #424242;
   --white: #ffff;
+  --light-bg: #f5f5f5;
+  --maroon: #b80f0a;
 }
 
 * {
@@ -46,7 +48,7 @@ header {
 
 .header-container img {
   max-width: 500px;
-  filter: grayscale(70%);
+  filter: grayscale(30%);
   margin-top: 200px;
 }
 
@@ -55,11 +57,11 @@ header {
 }
 
 .header-content h2 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 100;
-  letter-spacing: 0.1rem;
   margin-bottom: 2rem;
-  line-height: 2.5rem;
+  line-height: 3.5rem;
+  color: var(--maroon);
 }
 
 .header-content p {
@@ -120,28 +122,33 @@ header {
 .main-table table tr td {
   padding: 1.2rem 0;
   text-align: left;
-  border-bottom: solid var(--light);
+  border-bottom: solid var(--light) 0.1px;
 }
 .main-container table tr td:first-child {
   color: var(--text-dark);
+  font-weight: 500;
 }
 
 .main-container table tr td:nth-child(2) {
   color: var(--text-light);
+  font-weight: 400;
 }
 
 .championship-container {
   border-top: solid 0.1px var(--light);
+  border-radius: 1rem;
   max-width: 800px;
   text-align: center;
-  background-color: #f5f5f5;
-  padding: 0 1rem 0.5rem;
+  /* background-color: var(--light-bg); */
+  padding: 0 0 0.5rem;
+  box-shadow: 5px 5px 30px rgb(0, 0, 0, 0.1);
 }
 .championship-container .tab-header {
   display: flex;
   justify-content: center;
 }
 .championship-container .tab-header .tab {
+  border-top-right-radius: 1rem;
   padding: 1.5rem 2rem;
   width: 100%;
   color: var(--text-dark);
@@ -186,4 +193,50 @@ header {
 }
 .non-championship-content {
   display: none;
+}
+
+.facts-container h2 {
+  text-align: center;
+  margin-bottom: 5rem;
+  color: var(--text-dark);
+  font-size: 2.7rem;
+  font-weight: 300;
+}
+.facts {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  box-shadow: 5px 5px 30px rgb(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  background-color: var(--white);
+}
+.facts-container span {
+  color: var(--maroon);
+  font-weight: 600;
+}
+.facts-container .facts-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  color: var(--text-dark);
+  padding: 1rem 2.5rem;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  background-color: var(--white);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.facts-container h3 {
+  font-weight: 500;
+  padding: 0.75 0rem;
+}
+
+.facts-container .facts-content {
+  color: var(--text-light);
+  text-align: justify;
+  background-color: var(--white);
+  padding: 1rem 2.5rem 2.5rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  line-height: 2rem;
+  /* display: none; */
 }

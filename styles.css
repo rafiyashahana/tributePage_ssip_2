@@ -199,6 +199,9 @@ header {
 .non-championship-content {
   display: none;
 }
+.championship-content {
+  display: block;
+}
 
 .facts-container h2 {
   text-align: center;

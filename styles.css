@@ -169,8 +169,8 @@ header {
 }
 .championship-content table,
 .non-championship-content table {
-  margin: auto;
-  border-spacing: 3.5rem 1.5rem;
+  margin: 2rem auto;
+  border-spacing: 4.5rem 1rem;
   margin-bottom: 1rem;
 }
 .championship-content table thead tr td,
@@ -186,7 +186,7 @@ header {
 }
 
 .championship-content .btn {
-  width: 200px;
+  width: 50%;
   margin: auto;
   padding: 0.5rem;
   cursor: pointer;
@@ -269,4 +269,41 @@ footer a {
   color: var(--light);
   font-size: 0.75rem;
   color: var(--maroon);
+}
+
+@media (max-width: 777px) {
+  .header-container {
+    flex-direction: column-reverse;
+    height: fit-content;
+  }
+  .header-container img {
+    max-height: 500px;
+    overflow: hidden;
+    margin: -10% 0 -20%;
+    clip-path: inset(2% 6% 29% 10%);
+  }
+}
+
+@media (max-width: 670px) {
+  /* .header-container {
+    width: 100%;
+    text-align: center;
+  }
+  .btn-container {
+    justify-content: center;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+  }
+  .championship-container table {
+    font-size: 1rem;
+  } */
+  html {
+    display: flex;
+  }
 }

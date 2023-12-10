@@ -251,7 +251,12 @@ header {
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   line-height: 2rem;
-  /* display: none; */
+  display: none;
+}
+.facts-header i {
+  transform: scale(2);
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 footer {

@@ -281,10 +281,12 @@ footer a {
   color: var(--maroon);
 }
 
-@media (max-width: 777px) {
+@media (max-width: 959px) {
   .header-container {
     flex-direction: column-reverse;
     height: fit-content;
+    width: 100%;
+    text-align: center;
   }
   .header-container img {
     max-height: 500px;
@@ -292,13 +294,7 @@ footer a {
     margin: -10% 0 -20%;
     clip-path: inset(2% 6% 29% 10%);
   }
-}
 
-@media (max-width: 670px) {
-  /* .header-container {
-    width: 100%;
-    text-align: center;
-  }
   .btn-container {
     justify-content: center;
   }
@@ -311,9 +307,21 @@ footer a {
     gap: 2rem;
   }
   .championship-container table {
-    font-size: 1rem;
-  } */
-  html {
-    display: flex;
+    border-spacing: 0.5rem 1.5rem;
+    transform: scale(0.9);
+  }
+  .championship-container {
+    margin: 0 auto;
+    /* margin: 0 1rem; */
+    padding-bottom: 2rem;
+  }
+}
+@media (max-width: 385px) {
+  .championship-container .tab-header .tab {
+    font-size: 0.7rem;
+  }
+  .championship-container table {
+    border-spacing: 0.2rem 1.5rem;
+    font-size: 0.7rem;
   }
 }
